@@ -2,7 +2,7 @@ from pathlib import Path
 import json
 
 # Read data as a string and convert to a Python object.
-path = Path('/Users/quanefiom/desktop/developer/python_work/chapters/chp16_Downloading_Data/eq_data/30days_sig_earthquakes.geojson')
+path = Path('/Users/quanefiom/desktop/developer/python_work/chapters/chp16_Downloading_Data/eq_data/eq_data_1_day_m1.geojson')
 contents = path.read_text(encoding='utf-8')
 all_eq_data = json.loads(contents)
 

@@ -1,6 +1,8 @@
 from pathlib import Path
 import json
 
+import plotly.express as px
+
 # Read data as a string and convert to a Python object.
 path = Path('/Users/quanefiom/desktop/developer/python_work/chapters/chp16_Downloading_Data/eq_data/eq_data_1_day_m1.geojson')
 contents = path.read_text(encoding='utf-8')
@@ -33,6 +35,11 @@ for eq_dict in all_eq_dicts:
 
 
 
-print(mags[:10]) 
-print(lons[:5])
-print(lats[:5])
+#print(mags[:10]) 
+#print(lons[:5])
+#print(lats[:5])
+
+# Map the earthquakes.
+title = 'Global Earthquakes'
+fig = px.scatter_geo(lon=lons, lat=lats, title=title)
+fig.show()

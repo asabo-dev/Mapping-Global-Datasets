@@ -35,5 +35,5 @@ for eq_dict in all_eq_dicts:
 
 # Map the earthquakes.
 title = 'Global Earthquakes'
-fig = px.scatter_geo(lon=lons, lat=lats, size=mags, title=title)
+fig = px.scatter_geo(lon=lons, lat=lats, size=mags, title=title, color=mags, color_continuous_scale='Viridis', labels={'color': 'Magnitude'}, projection='natural earth',)
 fig.show()

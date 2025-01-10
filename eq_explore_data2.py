@@ -17,13 +17,7 @@ path.write_text(readable_contents)
 all_eq_dicts = all_eq_data['features']
 #print(len(all_eq_dicts))
 
-# Extract the magnitude of each earthquake.
-mags = []
-for eq_dict in all_eq_dicts:
-    mag = eq_dict['properties']['mag']
-    mags.append(mag)
-
-# Extract the location data of each earthquake.
+# Extract the magnitude and location data of each earthquake.
 mags, lons, lats = [], [], []
 for eq_dict in all_eq_dicts:
     mag = eq_dict['properties']['mag']

@@ -1,0 +1,1 @@
+This project visualizes global earthquake data from the past month. Using a dataset containing details of recent earthquakes, I created an interactive map with Plotly Express. The map highlights earthquake locations and their respective magnitudes, providing a clear visual representation of their significance.
